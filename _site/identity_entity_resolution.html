@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+<title>Markdown Slides | Getting Started</title>
+<meta name="author" content="Alexander Naumann">
+<meta name="description" content="A short introduction into how to set up Markdown Slides and what you can do with it.">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="shortcut icon" href="/identity_entity_resolution/assets/images/favicon.ico">
+
+<link rel="stylesheet" href="/identity_entity_resolution/assets/reveal.js/dist/reveal.css">
+<link rel="stylesheet" href="/identity_entity_resolution/assets/reveal.js/dist/theme/white.css" id="theme">
+<link rel="stylesheet" href="/identity_entity_resolution/assets/reveal.js/plugin/highlight/monokai.css">
+<link rel="stylesheet" href="/identity_entity_resolution/assets/css/gh-fork-ribbon.min.css" />
+
+<!-- jQuery -->
+<script src="/identity_entity_resolution/assets/js/jquery-3.5.1.min.js"></script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/identity_entity_resolution/assets/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+
+
+</head>
+<body>
+  
+  <a class="github-fork-ribbon right-top" href="https://github.com/pidtoo/identity_entity_resolutiontree/gh-pages/slides/identity_entity_resolution/_posts" data-ribbon="Meetup" title="Meetup">Meetup</a>
+	<div class="reveal">
+    <div class='footer' style="position: absolute; bottom: 1em; left: 1em; font-size: 0.5em;">
+      
+    </div>
+		<div class="slides">
+      
+        
+
+
+
+  
+  
+  
+  
+  
+  
+    
+      <section id="00_Overview" data-markdown>
+    
+      <textarea data-template>
+        <!-- .slide: data-background="#E6F7FF" -->
+
+# Innovating on Healthcare Data <!-- .element: class="r-fit-text" -->
+
+Quick Identity and Entity Resolution <!-- .element: class="r-fit-text" -->
+
+<img src="assets/slides/identity_entity_resolution/blackboard.jpg" data-autoplay>
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Contents
+
+1. [Introduction](#/02_intro): What is this? How to use it?
+2. [Examples](#/03_examples): What can this stuff do?
+3. [What's next?](#/10_whats_next): Possible extensions & bugs
+4. [Credits](#/15_credits): How is this possible?
+
+      </textarea>
+    </section>
+  
+
+      
+        
+
+
+
+  
+  
+  
+  
+  
+  
+    
+      <section id="02_intro" data-markdown>
+    
+      <textarea data-template>
+        <!-- .slide: data-background="#000" -->
+
+# Intro <!-- .element: class="r-fit-text" -->
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+<!-- .slide: data-background="#000" -->
+
+
+## Hello
+
+Ron Sweeney, Principal Architect
+
+- _Innovated_ with HealthCare Data for many years with a large IDN.
+- Helped others _Innovate_ with HealthCare Data running a small Data Integration Practice.
+- Currently _Innovating_ to help put your FHIR data to work responsibly. 
+
+I consider myself a "thought follower", enjoy trolling my peers for technical arguments, and have been an evangelist of InterSystems technologies and Interoperability since before it was even a job posting. 
+
+I am building [PID^TOO||](https://www.pidtoo.com/), and currently getting help through a startup incubator [Caelistinus](https://twitter.com/hakimel) to pull it altogether.   [InterSystems](https://github.com/tasmo/reveal-jekyll) by [Zingg](https://zingg.ai/_tasmo)
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## How to use it?
+
+To set up a [project site](https://help.github.com/articles/user-organization-and-project-pages/#project-pages) that is reachable on `https://{yourname}.github.io/{projectname}`:
+
+- [Fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) the [project](https://github.com/pidtoo/identity_entity_resolution) and give it a name `{projectname}`
+- Basis for the website is the `gh-pages` branch, so you should [set that as the default branch](https://help.github.com/articles/setting-the-default-branch/)
+- In [\_config.yml](./_config.yml) in your `gh-pages` branch, change `baseurl: ""` to `baseurl: /{projectname}`
+
+To run the website on your local machine, you need to [install](https://jekyllrb.com/docs/installation/) Jekyll.
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## How to add a new presentation?
+
+To add a new presentation called `{my_presentation}`
+
+- create `{my_presentation}.md` in the main directory
+  - by copying `getting_started.md`
+  - and adjust the configuration
+- create a folder `slides/{my_presentation}/_posts`
+- add your markdown files in this folder
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## How to create slides? (1/3)
+
+- create a markdown file for each section/chapter/ ...
+  - you can choose this freely (also all slides in one file is possible)
+  - new files are needed for references, i.e. jumping to different sections
+- each markdown file should start with `0000-1-1-` and is followed by its name to make referencing possible
+- e.g. `0000-1-1-00_Overview.md`, where `00_Overview` is the file name
+  - to refer to the slides in this file link to `#/00_Overview`
+  - if you do not use the prefix `0000-1-1-` you can references files by using their full name without the file ending `.md`
+- slides are shown in the alphabetical order of their file names
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## How to create slides? (2/3)
+
+- the content of the slides is written in simple markdown
+- slides within a markdown file need to be separated by three `-`
+- e.g.
+
+  ```markdown
+  ## Slide 1
+
+  Text on slide 1
+
+  -&nbsp;-&nbsp;-
+
+  ## Slide 2
+
+  - List on slide 2
+  ```
+
+  - note that you need to remove the space between the `-` to make it work
+
+- the best way is to check these [slides on Github](https://github.com/pidtoo/identity_entity_resolution/tree/gh-pages/slides/getting_started/_posts)
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## How to create slides? (3/3)
+
+If you want to use assets, such as images
+
+- create a folder `assets/slides/{my_presentation}`
+- use `{&nbsp;{ asset_folder }&nbsp;}` to reference to the file location
+  - e.g. if you want to add and image from that folder
+  ```html
+  <img src="{&nbsp;{asset_folder}&nbsp;}/latex_marker.JPG" />
+  ```
+  - note that the spaces are not necessary
+
+      </textarea>
+    </section>
+  
+
+      
+		</div>
+	</div>
+	<script src="/identity_entity_resolution/assets/reveal.js/dist/reveal.js"></script>
+<script src="/identity_entity_resolution/assets/reveal.js/plugin/zoom/zoom.js"></script>
+<script src="/identity_entity_resolution/assets/reveal.js/plugin/notes/notes.js"></script>
+<script src="/identity_entity_resolution/assets/reveal.js/plugin/search/search.js"></script>
+<script src="/identity_entity_resolution/assets/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="/identity_entity_resolution/assets/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="/identity_entity_resolution/assets/reveal.js/plugin/math/math.js"></script>
+
+
+<!-- reveal.js init -->
+<script>
+  // Full list of configuration options available here:
+  // https://revealjs.com/config/
+  Reveal.initialize({
+    
+    width: '1200',
+    height: '960',
+    margin: '0.1',
+    minScale: '0.2',
+    maxScale: '1.5',
+    controls: true,
+    controlsTutorial: false,
+    controlsLayout: 'bottom-right',
+    controlsBackArrows: 'faded',
+    progress: true,
+    slideNumber: false,
+    showSlideNumber: 'all',
+    hashOneBasedIndex: false,
+    hash: false,
+    respondToHashChanges: true,
+    history: true,
+    keyboard: true,
+    keyboardCondition: '',
+    disableLayout: false,
+    overview: true,
+    center: true,
+    touch: true,
+    loop: false,
+    rtl: false,
+    navigationMode: 'default',
+    shuffle: false,
+    fragments: true,
+    fragmentInURL: true,
+    embedded: false,
+    help: true,
+    pause: true,
+    showNotes: false,
+    autoPlayMedia: '',
+    preloadIframes: '',
+    autoAnimate: true,
+    autoAnimateMatcher: '',
+    autoAnimateEasing: 'ease',
+    autoAnimateDuration: '1.0',
+    autoAnimateUnmatched: true,
+    autoAnimateStyles: '[ "opacity", "color", "background-color", "padding", "font-size", "line-height", "letter-spacing", "border-width", "border-color", "border-radius", "outline", "outline-offset" ]',
+    autoSlide: false,
+    autoSlideStoppable: true,
+    autoSlideMethod: '',
+    defaultTiming: '',
+    mouseWheel: false,
+    previewLinks: false,
+    postMessage: true,
+    postMessageEvents: false,
+    focusBodyOnPageVisibilityChange: true,
+    transition: 'slide',
+    transitionSpeed: 'default',
+    backgroundTransition: 'fade',
+    pdfMaxPagesPerSlide: 'Number.POSITIVE_INFINITY',
+    pdfSeparateFragments: true,
+    pdfPageHeightOffset: '-1',
+    viewDistance: '3',
+    mobileViewDistance: '2',
+    display: 'block',
+    hideInactiveCursor: true,
+    hideCursorTime: '5000',
+    
+    
+    math: {
+      // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+      config: 'TeX-AMS_HTML-full',
+      TeX: {
+        Macros: {
+          R: '\\mathbb{R}',
+          set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+        }
+      }
+    },
+    plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath]
+  });
+
+  
+  // Shows the slide number using default formatting
+  Reveal.configure({ slideNumber: true });
+  Reveal.configure({ slideNumber: 'c/t' });
+  
+</script>
+<!-- End reveal.js init -->
+
+</body>
+</html>
+

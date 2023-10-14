@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+<title>Markdown Slides | Getting Started</title>
+<meta name="author" content="Alexander Naumann">
+<meta name="description" content="A short introduction into how to set up Markdown Slides and what you can do with it.">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="shortcut icon" href="/identity_entity_resolution/assets/images/favicon.ico">
+
+<link rel="stylesheet" href="/identity_entity_resolution/assets/reveal.js/dist/reveal.css">
+<link rel="stylesheet" href="/identity_entity_resolution/assets/reveal.js/dist/theme/white.css" id="theme">
+<link rel="stylesheet" href="/identity_entity_resolution/assets/reveal.js/plugin/highlight/monokai.css">
+<link rel="stylesheet" href="/identity_entity_resolution/assets/css/gh-fork-ribbon.min.css" />
+
+<!-- jQuery -->
+<script src="/identity_entity_resolution/assets/js/jquery-3.5.1.min.js"></script>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '/identity_entity_resolution/assets/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+
+
+</head>
+<body>
+  
+  <a class="github-fork-ribbon right-top" href="https://github.com/pidtoo/identity_entity_resolutiontree/gh-pages/slides/getting_started/_posts" data-ribbon="Meetup" title="Meetup">Meetup</a>
+	<div class="reveal">
+    <div class='footer' style="position: absolute; bottom: 1em; left: 1em; font-size: 0.5em;">
+      
+    </div>
+		<div class="slides">
+      
+        
+
+
+
+  
+  
+  
+  
+  
+  
+    
+      <section id="00_Overview" data-markdown>
+    
+      <textarea data-template>
+        <!-- .slide: data-background="#E6F7FF" -->
+
+# Markdown Slides <!-- .element: class="r-fit-text" -->
+
+Quickly write & host beautiful markdown-based slides <!-- .element: class="r-fit-text" -->
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Contents
+
+1. [Introduction](#/02_intro): What is this? How to use it?
+2. [Examples](#/03_examples): What can this stuff do?
+3. [What's next?](#/10_whats_next): Possible extensions & bugs
+4. [Credits](#/15_credits): How is this possible?
+
+      </textarea>
+    </section>
+  
+
+      
+        
+
+
+
+  
+  
+  
+  
+  
+  
+    
+      <section id="02_intro" data-markdown>
+    
+      <textarea data-template>
+        <!-- .slide: data-background="#E6F7FF" -->
+
+# Intro <!-- .element: class="r-fit-text" -->
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## What is Markdown Slides?
+
+A template project for a Github page
+
+- to quickly create beautiful slides and share them on freely hosted Github pages
+- it is based primarily on Markdown &rarr; easy collaboration and version control
+- you can host multiple presentations
+- to see its full power, just check the [examples](#/03_examples)
+
+It is powered by [reveal.js](https://revealjs.com/), an awesome project by [Hakim El Hattab](https://twitter.com/hakimel) and based on and inspired by [reveal-jekyll](https://github.com/tasmo/reveal-jekyll) by [Thomas Friese](https://twitter.com/_tasmo)
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## How to use it?
+
+To set up a [project site](https://help.github.com/articles/user-organization-and-project-pages/#project-pages) that is reachable on `https://{yourname}.github.io/{projectname}`:
+
+- [Fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) the [project](https://github.com/pidtoo/identity_entity_resolution) and give it a name `{projectname}`
+- Basis for the website is the `gh-pages` branch, so you should [set that as the default branch](https://help.github.com/articles/setting-the-default-branch/)
+- In [\_config.yml](./_config.yml) in your `gh-pages` branch, change `baseurl: ""` to `baseurl: /{projectname}`
+
+To run the website on your local machine, you need to [install](https://jekyllrb.com/docs/installation/) Jekyll.
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## How to add a new presentation?
+
+To add a new presentation called `{my_presentation}`
+
+- create `{my_presentation}.md` in the main directory
+  - by copying `getting_started.md`
+  - and adjust the configuration
+- create a folder `slides/{my_presentation}/_posts`
+- add your markdown files in this folder
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## How to create slides? (1/3)
+
+- create a markdown file for each section/chapter/ ...
+  - you can choose this freely (also all slides in one file is possible)
+  - new files are needed for references, i.e. jumping to different sections
+- each markdown file should start with `0000-1-1-` and is followed by its name to make referencing possible
+- e.g. `0000-1-1-00_Overview.md`, where `00_Overview` is the file name
+  - to refer to the slides in this file link to `#/00_Overview`
+  - if you do not use the prefix `0000-1-1-` you can references files by using their full name without the file ending `.md`
+- slides are shown in the alphabetical order of their file names
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## How to create slides? (2/3)
+
+- the content of the slides is written in simple markdown
+- slides within a markdown file need to be separated by three `-`
+- e.g.
+
+  ```markdown
+  ## Slide 1
+
+  Text on slide 1
+
+  -&nbsp;-&nbsp;-
+
+  ## Slide 2
+
+  - List on slide 2
+  ```
+
+  - note that you need to remove the space between the `-` to make it work
+
+- the best way is to check these [slides on Github](https://github.com/pidtoo/identity_entity_resolution/tree/gh-pages/slides/getting_started/_posts)
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## How to create slides? (3/3)
+
+If you want to use assets, such as images
+
+- create a folder `assets/slides/{my_presentation}`
+- use `{&nbsp;{ asset_folder }&nbsp;}` to reference to the file location
+  - e.g. if you want to add and image from that folder
+  ```html
+  <img src="{&nbsp;{asset_folder}&nbsp;}/latex_marker.JPG" />
+  ```
+  - note that the spaces are not necessary
+
+      </textarea>
+    </section>
+  
+
+      
+        
+
+
+
+  
+  
+  
+  
+  
+  
+    
+      <section id="03_examples" data-markdown>
+    
+      <textarea data-template>
+        <!-- .slide: data-background="#E6F7FF" -->
+
+# Examples <!-- .element: class="r-fit-text" -->
+
+What can this stuff do? <!-- .element: class="r-fit-text" -->
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+The following examples are mostly based on the [revealjs](https://revealjs.com/) examples on [Github](https://github.com/hakimel/reveal.js/tree/master/examples) and adjusted to use mainly Markdown only.
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Control Features
+
+- press `f` for full screen mode
+- press `b` to pause the presentation
+- press `s` for speaker view
+- press `o` to see a slide overview (not working)
+- use `alt` + `mouse click` to zoom in and out
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+<!-- .slide: data-background="#00ffff" -->
+
+## Colored background
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+<!-- .slide: data-background-transition="slide" data-background="https://a-nau.github.io/assets/img/sidebar-bg.jpg" -->
+
+## Background images
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+<!-- .slide: data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" -->
+
+## Video background
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+<!-- .slide: data-background-iframe="https://slides.com/news/make-better-presentations/embed?style=hidden&autoSlide=4000" -->
+
+## Iframe background
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+<!-- .slide: data-background-iframe="https://www.youtube.com/embed/h1_nyI3z8gI" data-background-interactive-->
+
+## data-background-iframe
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Video on slide
+
+<video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" data-autoplay></video>
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Image on slide
+
+<img src="assets/slides/getting_started/blackboard.jpg" data-autoplay>
+
+From [Stux](https://pixabay.com/users/stux-12364/) on [Pixabay](https://pixabay.com/photos/black-board-chalk-traces-school-1072366/), but image is stored locally.
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+<!-- .slide: data-background-video="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"-->
+
+## data-background-video
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Math: An Identity of Ramanujan
+
+<div class="fragment">
+  \[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+  1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+  {1+\frac{e^{-8\pi}} {1+\ldots} } } } \]
+</div>
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+<section data-transition="none">
+
+## Coding
+
+```python[1-2]
+import dataclasses
+import yaml2pyclass
+
+class Config(yaml2pyclass.CodeGenerator):
+    @dataclasses.dataclass
+    class ClusterConfigClass:
+        eps: float
+        min_num_samples: int
+
+    image_size: list
+    cluster_config: ClusterConfigClass
+    path_output: str
+```
+
+First do `import`s
+
+</section>
+
+<section data-transition="none">
+
+## Coding
+
+```python[4-12]
+import dataclasses
+import yaml2pyclass
+
+class Config(yaml2pyclass.CodeGenerator):
+    @dataclasses.dataclass
+    class ClusterConfigClass:
+        eps: float
+        min_num_samples: int
+
+    image_size: list
+    cluster_config: ClusterConfigClass
+    path_output: str
+```
+
+Then follows the rest
+
+</section>
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Coding large
+
+```html[3-5|18-20]
+<table>
+  <tr>
+    <td>Apples</td>
+    <td>$1</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Oranges</td>
+    <td>$2</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>Kiwi</td>
+    <td>$3</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Banana</td>
+    <td>$2</td>
+    <td>2</td>
+  </tr>
+</table>
+
+```
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Fragments
+
+<p class="fragment" data-fragment-index="3">Appears last</p>
+<p class="fragment" data-fragment-index="1">Appears first</p>
+<p class="fragment" data-fragment-index="2">Appears second</p>
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Stacking on top
+
+<div class="r-stack">
+  <img src="https://placekitten.com/450/300" width="450" height="300" class="fragment fade-in-then-out">
+  <img src="https://placekitten.com/300/450" width="300" height="450" class="fragment fade-in-then-out">
+  <img src="https://placekitten.com/400/400" width="400" height="400" class="fragment fade-in-then-out">
+</div>
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Horizontal stacking
+
+<div class="r-hstack">
+  <img src="https://placekitten.com/450/300" width="450" height="300" class="fragment fade-in-then-out">
+  <img src="https://placekitten.com/300/450" width="300" height="450" class="fragment fade-in-then-out">
+  <img src="https://placekitten.com/400/400" width="400" height="400" class="fragment fade-in-then-out">
+</div>
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Vertical stacking
+
+<div class="r-vstack">
+  <img src="https://placekitten.com/450/300" width="450" height="300" class="fragment fade-in-then-out">
+  <img src="https://placekitten.com/300/450" width="300" height="450" class="fragment fade-in-then-out">
+</div>
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+<!-- .slide: data-transition="zoom"-->
+
+## data-transition: zoom
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+<!-- .slide: data-transition="zoom-in fade-out"-->
+
+## data-transition: zoom-in fade-out
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Default
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+<!-- .slide: data-transition="convex"-->
+
+## data-transition: convex
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+<!-- .slide: data-transition="convex-in concave-out"-->
+
+## data-transition: convex-in concave-out
+
+      </textarea>
+    </section>
+  
+
+      
+        
+
+
+
+  
+  
+  
+  
+  
+  
+    
+      <section id="10_whats_next" data-markdown>
+    
+      <textarea data-template>
+        <!-- .slide: data-background="#E6F7FF" -->
+
+# What's next? <!-- .element: class="r-fit-text" -->
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Possible additions
+
+[Plugins](https://github.com/rajgoel/reveal.js-plugins) by [Asvin Goel](https://github.com/rajgoel)
+
+- [Chalkboard](https://github.com/rajgoel/reveal.js-plugins/tree/master/chalkboard) ([Demo](https://rajgoel.github.io/reveal.js-demos/chalkboard-demo.html)):
+  A plugin adding a chalkboard and slide annotation.
+- [Chart](https://github.com/rajgoel/reveal.js-plugins/tree/master/chart) ([Demo](https://rajgoel.github.io/reveal.js-demos/chart-demo.html)):
+  A plugin for using Chart.js.
+- [Custom controls](https://github.com/rajgoel/reveal.js-plugins/tree/master/customcontrols) ([Demo](https://rajgoel.github.io/reveal.js-demos/customcontrols-demo.html)):
+  A plugin for customization of controls.
+- [Embed tweet](https://github.com/rajgoel/reveal.js-plugins/tree/master/embed-tweet) ([Demo](https://rajgoel.github.io/reveal.js-demos/embed-tweet-demo.html)):
+  A plugin allowing to easily embed tweets in your slides.
+- [Menu](https://github.com/denehyg/reveal.js-menu) ([Demo](https://denehyg.github.io/reveal.js-menu)): A plugin by Greg Denehy for adding a slideout menu.
+- [Seminar](https://github.com/rajgoel/reveal.js-plugins/tree/master/seminar) ([Demo](https://rajgoel.github.io/reveal.js-demos/seminar-demo.html)): a plugin providing interaction capabilities with other hosts and participants (e.g. slide events, chalkboard drawings, polls).
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## Fixing issues
+
+The following functionalities of reveal.js are not working
+
+- Overview of slides
+- Auto-animation
+
+      </textarea>
+    </section>
+  
+
+      
+        
+
+
+
+  
+  
+  
+  
+  
+  
+    
+      <section id="15-credits" data-markdown>
+    
+      <textarea data-template>
+        ## Credits
+
+- this project is powered by [reveal.js](https://revealjs.com/), an awesome project by [Hakim El Hattab](https://twitter.com/hakimel)
+- and it is based on and inspired by [reveal-jekyll](https://github.com/tasmo/reveal-jekyll) by [Thomas Friese](https://twitter.com/_tasmo)
+- it uses the [Github ribbon](https://github.com/simonwhitaker/github-fork-ribbon-css) by [Simon Whitaker](https://github.com/simonwhitaker)
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## What is reveal.js?
+
+- a HTML presentation framework
+- allows to show beautiful presentations directly in the browser
+- HTML based, with support for Markdown
+- check the [website](https://revealjs.com/) with a demo in the header
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## reveal.js Github Demos
+
+- Animation: [original](/slides/assets/reveal.js/examples/auto-animate.html)
+- Backgrounds: [original](/slides/assets/reveal.js/examples/backgrounds.html)
+- Layout helpers: [original](/slides/assets/reveal.js/examples/layout-helpers.html)
+- Markdown: [original](/slides/assets/reveal.js/examples/markdown.html)
+- Math: [original](/slides/assets/reveal.js/examples/math.html)
+- Media: [original](/slides/assets/reveal.js/examples/media.html)
+- Transitions: [original](/slides/assets/reveal.js/examples/transitions.html)
+
+
+      </textarea>
+    </section>
+  
+    
+      <section data-markdown>
+    
+      <textarea data-template>
+        
+
+## What is reveal-jekyll?
+
+- based on reveal.js
+- combines it with Jekyll and Github Pages to allow hosting an online presentation
+- based on markdown, with some additional syntax
+- see [code](https://github.com/tasmo/reveal-jekyll) and [demo](https://gh.tasmo.de/reveal-jekyll/)
+
+      </textarea>
+    </section>
+  
+
+      
+		</div>
+	</div>
+	<script src="/identity_entity_resolution/assets/reveal.js/dist/reveal.js"></script>
+<script src="/identity_entity_resolution/assets/reveal.js/plugin/zoom/zoom.js"></script>
+<script src="/identity_entity_resolution/assets/reveal.js/plugin/notes/notes.js"></script>
+<script src="/identity_entity_resolution/assets/reveal.js/plugin/search/search.js"></script>
+<script src="/identity_entity_resolution/assets/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="/identity_entity_resolution/assets/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="/identity_entity_resolution/assets/reveal.js/plugin/math/math.js"></script>
+
+
+<!-- reveal.js init -->
+<script>
+  // Full list of configuration options available here:
+  // https://revealjs.com/config/
+  Reveal.initialize({
+    
+    width: '1200',
+    height: '960',
+    margin: '0.1',
+    minScale: '0.2',
+    maxScale: '1.5',
+    controls: true,
+    controlsTutorial: false,
+    controlsLayout: 'bottom-right',
+    controlsBackArrows: 'faded',
+    progress: true,
+    slideNumber: false,
+    showSlideNumber: 'all',
+    hashOneBasedIndex: false,
+    hash: false,
+    respondToHashChanges: true,
+    history: true,
+    keyboard: true,
+    keyboardCondition: '',
+    disableLayout: false,
+    overview: true,
+    center: true,
+    touch: true,
+    loop: false,
+    rtl: false,
+    navigationMode: 'default',
+    shuffle: false,
+    fragments: true,
+    fragmentInURL: true,
+    embedded: false,
+    help: true,
+    pause: true,
+    showNotes: false,
+    autoPlayMedia: '',
+    preloadIframes: '',
+    autoAnimate: true,
+    autoAnimateMatcher: '',
+    autoAnimateEasing: 'ease',
+    autoAnimateDuration: '1.0',
+    autoAnimateUnmatched: true,
+    autoAnimateStyles: '[ "opacity", "color", "background-color", "padding", "font-size", "line-height", "letter-spacing", "border-width", "border-color", "border-radius", "outline", "outline-offset" ]',
+    autoSlide: false,
+    autoSlideStoppable: true,
+    autoSlideMethod: '',
+    defaultTiming: '',
+    mouseWheel: false,
+    previewLinks: false,
+    postMessage: true,
+    postMessageEvents: false,
+    focusBodyOnPageVisibilityChange: true,
+    transition: 'slide',
+    transitionSpeed: 'default',
+    backgroundTransition: 'fade',
+    pdfMaxPagesPerSlide: 'Number.POSITIVE_INFINITY',
+    pdfSeparateFragments: true,
+    pdfPageHeightOffset: '-1',
+    viewDistance: '3',
+    mobileViewDistance: '2',
+    display: 'block',
+    hideInactiveCursor: true,
+    hideCursorTime: '5000',
+    
+    
+    math: {
+      // mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+      config: 'TeX-AMS_HTML-full',
+      TeX: {
+        Macros: {
+          R: '\\mathbb{R}',
+          set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+        }
+      }
+    },
+    plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath]
+  });
+
+  
+  // Shows the slide number using default formatting
+  Reveal.configure({ slideNumber: true });
+  Reveal.configure({ slideNumber: 'c/t' });
+  
+</script>
+<!-- End reveal.js init -->
+
+</body>
+</html>
+

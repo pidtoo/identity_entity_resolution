@@ -1,0 +1,128 @@
+<!-- .slide: data-background="#000" -->
+
+<h1 id="intro-">Intro <!-- .element: class="r-fit-text" --></h1>
+
+<hr />
+
+<!-- .slide: data-background="#000" -->
+
+<h2 id="hello">Hello</h2>
+
+<p>Ron Sweeney, Principal Architect</p>
+
+<ul>
+  <li><em>Innovated</em> with HealthCare Data for many years with a large IDN.</li>
+  <li>Helped others <em>Innovate</em> with HealthCare Data running a small Data Integration Practice.</li>
+  <li>Currently <em>Innovating</em> to help put your FHIR data to work responsibly.</li>
+</ul>
+
+<p>I consider myself a “thought follower”, enjoy trolling my peers for technical arguments, and have been an evangelist of InterSystems technologies and Interoperability since before it was even a job posting.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>I am building [PID^TOO</td>
+      <td> </td>
+      <td>](https://www.pidtoo.com/), and currently getting help through a startup incubator <a href="https://twitter.com/hakimel">Caelistinus</a> to pull it altogether.   <a href="https://github.com/tasmo/reveal-jekyll">InterSystems</a> by <a href="https://zingg.ai/_tasmo">Zingg</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="how-to-use-it">How to use it?</h2>
+
+<p>To set up a <a href="https://help.github.com/articles/user-organization-and-project-pages/#project-pages">project site</a> that is reachable on <code class="language-plaintext highlighter-rouge">https://{yourname}.github.io/{projectname}</code>:</p>
+
+<ul>
+  <li><a href="https://docs.github.com/en/github/getting-started-with-github/fork-a-repo">Fork</a> the <a href="https://github.com/pidtoo/identity_entity_resolution">project</a> and give it a name <code class="language-plaintext highlighter-rouge">{projectname}</code></li>
+  <li>Basis for the website is the <code class="language-plaintext highlighter-rouge">gh-pages</code> branch, so you should <a href="https://help.github.com/articles/setting-the-default-branch/">set that as the default branch</a></li>
+  <li>In <a href="./_config.yml">_config.yml</a> in your <code class="language-plaintext highlighter-rouge">gh-pages</code> branch, change <code class="language-plaintext highlighter-rouge">baseurl: ""</code> to <code class="language-plaintext highlighter-rouge">baseurl: /{projectname}</code></li>
+</ul>
+
+<p>To run the website on your local machine, you need to <a href="https://jekyllrb.com/docs/installation/">install</a> Jekyll.</p>
+
+<hr />
+
+<h2 id="how-to-add-a-new-presentation">How to add a new presentation?</h2>
+
+<p>To add a new presentation called <code class="language-plaintext highlighter-rouge">{my_presentation}</code></p>
+
+<ul>
+  <li>create <code class="language-plaintext highlighter-rouge">{my_presentation}.md</code> in the main directory
+    <ul>
+      <li>by copying <code class="language-plaintext highlighter-rouge">getting_started.md</code></li>
+      <li>and adjust the configuration</li>
+    </ul>
+  </li>
+  <li>create a folder <code class="language-plaintext highlighter-rouge">slides/{my_presentation}/_posts</code></li>
+  <li>add your markdown files in this folder</li>
+</ul>
+
+<hr />
+
+<h2 id="how-to-create-slides-13">How to create slides? (1/3)</h2>
+
+<ul>
+  <li>create a markdown file for each section/chapter/ …
+    <ul>
+      <li>you can choose this freely (also all slides in one file is possible)</li>
+      <li>new files are needed for references, i.e. jumping to different sections</li>
+    </ul>
+  </li>
+  <li>each markdown file should start with <code class="language-plaintext highlighter-rouge">0000-1-1-</code> and is followed by its name to make referencing possible</li>
+  <li>e.g. <code class="language-plaintext highlighter-rouge">0000-1-1-00_Overview.md</code>, where <code class="language-plaintext highlighter-rouge">00_Overview</code> is the file name
+    <ul>
+      <li>to refer to the slides in this file link to <code class="language-plaintext highlighter-rouge">#/00_Overview</code></li>
+      <li>if you do not use the prefix <code class="language-plaintext highlighter-rouge">0000-1-1-</code> you can references files by using their full name without the file ending <code class="language-plaintext highlighter-rouge">.md</code></li>
+    </ul>
+  </li>
+  <li>slides are shown in the alphabetical order of their file names</li>
+</ul>
+
+<hr />
+
+<h2 id="how-to-create-slides-23">How to create slides? (2/3)</h2>
+
+<ul>
+  <li>the content of the slides is written in simple markdown</li>
+  <li>slides within a markdown file need to be separated by three <code class="language-plaintext highlighter-rouge">-</code></li>
+  <li>
+    <p>e.g.</p>
+
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gu">## Slide 1</span>
+
+Text on slide 1
+
+-<span class="ni">&amp;nbsp;</span>-<span class="ni">&amp;nbsp;</span>-
+
+<span class="gu">## Slide 2</span>
+<span class="p">
+-</span> List on slide 2
+</code></pre></div>    </div>
+
+    <ul>
+      <li>note that you need to remove the space between the <code class="language-plaintext highlighter-rouge">-</code> to make it work</li>
+    </ul>
+  </li>
+  <li>the best way is to check these <a href="https://github.com/pidtoo/identity_entity_resolution/tree/gh-pages/slides/getting_started/_posts">slides on Github</a></li>
+</ul>
+
+<hr />
+
+<h2 id="how-to-create-slides-33">How to create slides? (3/3)</h2>
+
+<p>If you want to use assets, such as images</p>
+
+<ul>
+  <li>create a folder <code class="language-plaintext highlighter-rouge">assets/slides/{my_presentation}</code></li>
+  <li>use <code class="language-plaintext highlighter-rouge">{&amp;nbsp;{ asset_folder }&amp;nbsp;}</code> to reference to the file location
+    <ul>
+      <li>e.g. if you want to add and image from that folder
+        <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"{&amp;nbsp;{asset_folder}&amp;nbsp;}/latex_marker.JPG"</span> <span class="nt">/&gt;</span>
+</code></pre></div>        </div>
+      </li>
+      <li>note that the spaces are not necessary</li>
+    </ul>
+  </li>
+</ul>
