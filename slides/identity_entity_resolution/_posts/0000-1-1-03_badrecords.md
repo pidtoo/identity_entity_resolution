@@ -56,7 +56,7 @@ More about the implementation of process, that provides the audit log and justif
 
  <img src="{{asset_folder}}/pholder.png" />
 
-- I have my own FHIR Based Solution and need to adopt the same principals 
+- I have my own FHIR® Based Solution and need to adopt the same principals 
 - Im sitting either between or
 
 ---

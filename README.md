@@ -4,7 +4,7 @@
 
 machine learning -> super sophisticated rules based inference -> human being + audit
 
-### sql means to fhir
+### sql means to FHIR®
 
 
 
