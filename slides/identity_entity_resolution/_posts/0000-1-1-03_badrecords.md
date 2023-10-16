@@ -13,7 +13,7 @@ A recent survey by Black Book has quantified just how bad duplicate records can 
 The survey also found that with hospitals with more than 150 beds and hundreds of thousands of records, it took approximately 5 months for data cleaning with data validation and normalization. 5 months of data cleaning equals 625,000 USD duplicate data spend besides the software and implementation costs (1.5*5/12).
 
 Refs: 
- [Zingg](https://zingg.ai/_tasmo)
+ [Black Book](https://blackbookmarketresearch.newswire.com/news/improving-provider-interoperability-congruently-increasing-patient-20426295)
 
 ---
 
@@ -42,11 +42,12 @@ one pic from website
 <!-- .slide: data-background="#111d30" -->
 ## Keep the CIO Out of Jail
 
-one pic
+<img src="{{asset_folder}}/cio_jail.png" />
 
-More about the implementation of process, that provides the audit log and justifications around data operations.
+Reckless Linking of Data without a process.
 
 Note: 
+No Idea where this link went.
 
 ---
 <!-- .slide: data-background="#111d30" -->
@@ -55,7 +56,7 @@ Note:
  <img src="{{asset_folder}}/pholder.png" />
 
 - I have my own FHIR® Based Solution and need to adopt the same principals 
-- Im sitting either between or
+- Im sitting either between or 
 
 ---
 <!-- .slide: data-background="#111d30" -->
