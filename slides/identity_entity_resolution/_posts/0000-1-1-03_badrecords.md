@@ -1,6 +1,6 @@
 <!-- .slide: data-background="#111d30" -->
 
-> "It is a truth universally acknowledged that duplicate records are bad."  - Sonal Goyal, Zingg.ai <!-- .element: class="r-fit-text" -->
+> "It is a truth universally acknowledged that duplicate records are bad."  - Sonal Goyal, Zingg.ai
 
 ### How Bad? <!-- .element: class="r-fit-text" -->
 ---
