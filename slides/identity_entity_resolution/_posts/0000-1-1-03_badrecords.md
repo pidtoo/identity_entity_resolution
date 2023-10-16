@@ -15,7 +15,7 @@ Refs:
 
 Note:
 My point here isnt to suggest those things can be replaced, but rather if the Health System
-has to spend that kind of cash, why dont you ?
+has to spend that kind of cash, why dont you?
 
 ---
 
