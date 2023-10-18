@@ -10,6 +10,8 @@
 
 A recent survey by Black Book has quantified just how bad duplicate records can be. The survey found that an average hospital is spending an extra <mark>1.5 million USD</mark> an year due to duplicate and fragmented patient records. <mark>1.5 million USD</mark>! Lack of a master patient index is clearly a very costly affair.  The survey also found that with hospitals with more than 150 beds and hundreds of thousands of records, it took approximately 5 months for data cleaning with data validation and normalization. <mark>5 months</mark> of data cleaning equals <mark>625,000 USD</mark> duplicate data spend besides the software and implementation costs <mark>(1.5*5/12)</mark>.
 
+- https://github.com/zinggAI/zingg/blob/main/docs/patient.md (@sonalgoyal)
+
 Refs: 
  [Black Book](https://blackbookmarketresearch.newswire.com/news/improving-provider-interoperability-congruently-increasing-patient-20426295)
 
@@ -20,37 +22,46 @@ has to spend that kind of cash, why dont you?
 ---
 <!-- .slide: data-background="#111d30" -->
 
+<table>
+
+<tr>
+<td>
 ## DJ Overlap
 
-DJ Overlap appears in the database twice, etc.
- <img src="{{asset_folder}}/pholder.png" />
 
----
-<!-- .slide: data-background="#111d30" -->
-
+</td>
+<td>
 ## DJ Overlay
 
-DJ Overlap appears in the database twice, etc.
-<img src="{{asset_folder}}/pholder.png" />
+
+</td>
+</tr>
+</table>
+
 
 ---
 <!-- .slide: data-background="#111d30" -->
 
+<table>
+
+<tr>
+<td>
 ## Hang The DJ
 
 <img width="100%" src="{{asset_folder}}/safety-protect-guard.png" />
 
----
-<!-- .slide: data-background="#111d30" -->
-
+</td>
+<td>
 ## Keep the CIO Out of Jail
 
 <img src="{{asset_folder}}/cio_jail.png" />
 
 Reckless Linking of Data without a process.
 
-Note: 
-No Idea where this link went.
+</td>
+</tr>
+</table>
+
 
 ---
 <!-- .slide: data-background="#111d30" -->
