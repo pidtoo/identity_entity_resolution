@@ -47,35 +47,22 @@ Note:
 Out of these two conditions, which one is worse ?
 In the age of PHR's, patients can be exposed to this type of error.
 
----
-<!-- .slide: data-background="#111d30" -->
-
-<table>
-
-<tr>
-<td>
-## Hang The DJ
-
-<img width="100%" src="{{asset_folder}}/safety-protect-guard.png" />
-
-</td>
-<td>
-## Keep the CIO Out of Jail
-
-<img src="{{asset_folder}}/cio_jail.png" />
-
-Reckless Linking of Data without a process.
-
-</td>
-</tr>
-</table>
-
 
 ---
 <!-- .slide: data-background="#111d30" -->
+## Patient Safety, Legal Implications, Keep the CIO Out of Jail
+
+<div class="r-vstack">
+  <img src="{{asset_folder}}/safety-protect-guard.png" class="fragment fade-in-then-out">
+  <img src="{{asset_folder}}/cio_jail.png" class="fragment fade-in-then-out">
+  <p class="fragment fade-in-then-out">Reckless Linking of Data without a process</p>
+</div>
+
+---
+<!-- .slide: data-background="#fff" -->
 ## Another Way for the Rest of Us 
 
- <img src="{{asset_folder}}/pholder.png" />
+ <img src="{{asset_folder}}/customer_data_platform.png" />
 
 - I have my own FHIR® Based Solution and need to adopt the same principals 
 - Im sitting either between or 
