@@ -61,7 +61,7 @@ In the age of PHR's, patients can be exposed to this type of error.
 ---
 <!-- .slide: data-background="#fff" -->
 ## Another Way for the Rest of Us 
-What if you are NOT in care delivery hospital system, but need to adopt similar practices ?
+A different Agenda
 
 <img src="{{asset_folder}}/customer_data_platform.png" />
 <span style="font-size:8px;">
@@ -74,4 +74,4 @@ SDOH Pilot
 <!-- .slide: data-background="#fff" -->
 ## Join the Battle Against Bad Records
 
- <img src="{{asset_folder}}/play.png" />
+<img src="{{asset_folder}}/play.png" />
