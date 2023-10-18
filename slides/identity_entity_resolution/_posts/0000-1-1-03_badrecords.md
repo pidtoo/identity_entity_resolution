@@ -28,18 +28,24 @@ has to spend that kind of cash, why dont you?
 
 <tr>
 <td>
-## DJ Overlap
-
+<h3>Overlap</h3>
+<p>Records that are supposed to be linked are not.</p>
+<img src="{{asset_folder}}/overlap.png" />
 
 </td>
 <td>
-## DJ Overlay
+<h3>Overlay</h3>
+<p>Records that are NOT supposed to be linked, are.</p>
+<img src="{{asset_folder}}/overlay.png" />
 
 
 </td>
 </tr>
 </table>
 
+Note:
+Out of these two conditions, which one is worse ?
+In the age of PHR's, patients can be exposed to this type of error.
 
 ---
 <!-- .slide: data-background="#111d30" -->
