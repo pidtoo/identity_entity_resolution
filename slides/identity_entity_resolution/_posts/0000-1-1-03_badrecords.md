@@ -4,9 +4,9 @@
 
 ### How Bad? <!-- .element: class="r-fit-text" -->
 ---
-
 <!-- .slide: data-background="#111d30" -->
- <img src="{{asset_folder}}/spend-money.png" />
+
+<img src="{{asset_folder}}/spend-money.png" />
 
 A recent survey by Black Book has quantified just how bad duplicate records can be. The survey found that an average hospital is spending an extra <mark>1.5 million USD</mark> an year due to duplicate and fragmented patient records. <mark>1.5 million USD</mark>! Lack of a master patient index is clearly a very costly affair.  The survey also found that with hospitals with more than 150 beds and hundreds of thousands of records, it took approximately 5 months for data cleaning with data validation and normalization. <mark>5 months</mark> of data cleaning equals <mark>625,000 USD</mark> duplicate data spend besides the software and implementation costs <mark>(1.5*5/12)</mark>.
 
@@ -18,7 +18,6 @@ My point here isnt to suggest those things can be replaced, but rather if the He
 has to spend that kind of cash, why dont you?
 
 ---
-
 <!-- .slide: data-background="#111d30" -->
 
 ## DJ Overlap
@@ -28,6 +27,7 @@ DJ Overlap appears in the database twice, etc.
 
 ---
 <!-- .slide: data-background="#111d30" -->
+
 ## DJ Overlay
 
 DJ Overlap appears in the database twice, etc.
@@ -35,12 +35,14 @@ DJ Overlap appears in the database twice, etc.
 
 ---
 <!-- .slide: data-background="#111d30" -->
+
 ## Hang The DJ
 
-<img src="{{asset_folder}}/safety-protect-guard.png" />
+<img width="100%" src="{{asset_folder}}/safety-protect-guard.png" />
 
 ---
 <!-- .slide: data-background="#111d30" -->
+
 ## Keep the CIO Out of Jail
 
 <img src="{{asset_folder}}/cio_jail.png" />
