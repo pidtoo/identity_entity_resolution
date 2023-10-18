@@ -51,19 +51,18 @@ In the age of PHR's, patients can be exposed to this type of error.
 ---
 <!-- .slide: data-background="#111d30" -->
 ## Patient Safety, Legal Implications, Keep the CIO Out of Jail
-
+Reckless Linking of Data without a process
 <div class="r-vstack">
-  <img src="{{asset_folder}}/safety-protect-guard.png" class="fragment fade-in-then-out">
-  <img src="{{asset_folder}}/cio_jail.png" class="fragment fade-in-then-out">
-  <p class="fragment fade-in-then-out">Reckless Linking of Data without a process</p>
+  <img src="{{asset_folder}}/safety-protect-guard.png" class="fragment fade-in">
+  <img src="{{asset_folder}}/cio_jail.png" class="fragment fade-in">
 </div>
 
 ---
 <!-- .slide: data-background="#fff" -->
 ## Another Way for the Rest of Us 
-A different Agenda
+A Different Agenda
 
-<img src="{{asset_folder}}/customer_data_platform.png" />
+<img src="{{asset_folder}}/customer_data_platform.png"/><br/>
 <span style="font-size:8px;">
 Andreessen Horowitz: https://a16z.com/the-rise-of-the-composable-cdp/
 </span>
