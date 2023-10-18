@@ -61,11 +61,12 @@ In the age of PHR's, patients can be exposed to this type of error.
 ---
 <!-- .slide: data-background="#fff" -->
 ## Another Way for the Rest of Us 
+What if you are NOT a hospital system, but need to adopt similar practices ?
 
- <img src="{{asset_folder}}/customer_data_platform.png" />
+<img src="{{asset_folder}}/customer_data_platform.png" />
 
-- I have my own FHIR® Based Solution and need to adopt the same principals 
-- Im sitting either between or 
+Note:
+SDOH Pilot
 
 ---
 <!-- .slide: data-background="#111d30" -->
