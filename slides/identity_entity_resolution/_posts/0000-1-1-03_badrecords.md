@@ -7,13 +7,14 @@
 <!-- .slide: data-background="#111d30" -->
 
 <img src="{{asset_folder}}/spend-money.png" />
-<span style="font-size:20px">
+<span style="font-size:38px">
 A recent survey by Black Book has quantified just how bad duplicate records can be. The survey found that an average hospital is spending an extra <mark>1.5 million USD</mark> an year due to duplicate and fragmented patient records. <mark>1.5 million USD</mark>! Lack of a master patient index is clearly a very costly affair.  The survey also found that with hospitals with more than 150 beds and hundreds of thousands of records, it took approximately 5 months for data cleaning with data validation and normalization. <mark>5 months</mark> of data cleaning equals <mark>625,000 USD</mark> duplicate data spend besides the software and implementation costs <mark>(1.5*5/12)</mark>.
+</span>
 
 Refs: 
-[Black Book](https://blackbookmarketresearch.newswire.com/news/improving-provider-interoperability-congruently-increasing-patient-20426295)
-[https://github.com/zinggAI/zingg/blob/main/docs/patient.md](https://github.com/zinggAI/zingg/blob/main/docs/patient.md) (@sonalgoyal)
-</span>
+[Black Book](https://blackbookmarketresearch.newswire.com/news/improving-provider-interoperability-congruently-increasing-patient-20426295)  
+[https://github.com/zinggAI/zingg/blob/main/docs/patient.md](https://github.com/zinggAI/zingg/blob/main/docs/patient.md) (@sonalgoyal)  
+
 
 
 Note:
