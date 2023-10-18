@@ -64,15 +64,14 @@ In the age of PHR's, patients can be exposed to this type of error.
 What if you are NOT in care delivery hospital system, but need to adopt similar practices ?
 
 <img src="{{asset_folder}}/customer_data_platform.png" />
-<span style="font-size:10px">
+<span style="font-size:8px;">
 Andreessen Horowitz: https://a16z.com/the-rise-of-the-composable-cdp/
 </span>
 Note:
 SDOH Pilot
 
 ---
-<!-- .slide: data-background="#111d30" -->
-## Solution, Illustrated
+<!-- .slide: data-background="#fff" -->
+## Join the Battle Against Bad Records
 
- <img src="{{asset_folder}}/pholder.png" />
-Solution PIC
+ <img src="{{asset_folder}}/play.png" />
