@@ -50,11 +50,11 @@ In the age of PHR's, patients can be exposed to this type of error.
 
 ---
 <!-- .slide: data-background="#111d30" -->
-## Patient Safety, Legal Implications, Keep the CIO Out of Jail
+## Patient Safety, Legal, Keep the CIO Out of Jail
 Reckless Linking of Data without a process, or no process at all.
 <div class="r-vstack">
   <img src="{{asset_folder}}/safety-protect-guard.png" class="fragment fade-in">
-  <img src="{{asset_folder}}/cio_jail.png" class="fragment fade-in">
+  <img width="75%" height="75%" src="{{asset_folder}}/cio_jail.png" class="fragment fade-in">
 </div>
 
 ---
